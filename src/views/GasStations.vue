@@ -257,7 +257,7 @@ export default {
       }
     },
   },
-  mounted() {
+  created() {
     this.$bus.$emit('show-loading', true);
     const gasStations = this.$store.getters.getGasStations;
     if (gasStations.length === 0) {

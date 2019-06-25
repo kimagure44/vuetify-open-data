@@ -599,7 +599,7 @@ export default {
       }
     },
   },
-  mounted() {
+  created() {
     this.$bus.$emit('show-loading', true);
     const beaches = this.$store.getters.getBeaches;
     if (beaches.length === 0) {
